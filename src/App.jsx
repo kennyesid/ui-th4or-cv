@@ -49,7 +49,7 @@ function App() {
 
   function redirectPageWhatsapp(event) {
     event.preventDefault();
-    window.open("https://wa.me/qr/AWRIQJUT6PYBN1/", "_blank");
+    window.open("https://wa.link/wekog1", "_blank");
   }
   function redirectPageLinkedin(event) {
     event.preventDefault();
@@ -125,9 +125,9 @@ function App() {
             <div className='social-icons'>
               <h2 className='social-icons-h2'>{language.home.contactMe}</h2>
               <h3>Favor de contactarse con mi persona por los siguientes medios para poder enviarle mi CV con las respectivas referencias.</h3>
-              <img onClick={redirectPageWhatsapp} href="https://icons8.com/icons/set/whatsapp" src="icon-whatsapp-4.svg" />
-              <img onClick={redirectPageLinkedin} href="https://icons8.com/icons/set/whatsapp" src="icons8-linkedin-4.svg" />
-              <img onClick={redirectPageGitHub} href="https://icons8.com/icons/set/whatsapp" src="icon-github.svg" />
+              <img onClick={redirectPageWhatsapp} src="icon-whatsapp-4.svg" />
+              <img onClick={redirectPageLinkedin} src="icons8-linkedin-4.svg" />
+              <img onClick={redirectPageGitHub} src="icon-github.svg" />
             </div>
           </div>
 
