@@ -38,7 +38,7 @@ function App() {
 
     setTimeout(() => {
       setloading(false);
-    }, 5000)
+    }, 4000)
   }, [])
 
 
@@ -121,13 +121,13 @@ function App() {
           <div className="home-img">
             <h1>{language.home.title} <span>Yesid</span></h1>
             <h3><span>FullStack</span> Developer</h3>
-            <img className='home-img-principal' src="/me-portafolio.png" alt="" />
+            <img className='home-img-principal' src="me-portafolio.png" alt="" />
             <div className='social-icons'>
               <h2 className='social-icons-h2'>{language.home.contactMe}</h2>
               <h3>Favor de contactarse con mi persona por los siguientes medios para poder enviarle mi CV con las respectivas referencias.</h3>
-              <img onClick={redirectPageWhatsapp} href="https://icons8.com/icons/set/whatsapp" src="/icon-whatsapp-4.svg" />
-              <img onClick={redirectPageLinkedin} href="https://icons8.com/icons/set/whatsapp" src="/icons8-linkedin-4.svg" />
-              <img onClick={redirectPageGitHub} href="https://icons8.com/icons/set/whatsapp" src="/icon-github.svg" />
+              <img onClick={redirectPageWhatsapp} href="https://icons8.com/icons/set/whatsapp" src="icon-whatsapp-4.svg" />
+              <img onClick={redirectPageLinkedin} href="https://icons8.com/icons/set/whatsapp" src="icons8-linkedin-4.svg" />
+              <img onClick={redirectPageGitHub} href="https://icons8.com/icons/set/whatsapp" src="icon-github.svg" />
             </div>
           </div>
 
@@ -144,47 +144,47 @@ function App() {
               {/* <a href="#"><i className='bx bxl-github'></i></a>
               <a href="#"><i className='bx bxl-linkedin'></i></a>
               <a href="#"><i className='bx bxl-twitter'></i></a> */}
-              <img src="/icon-react.svg" type="image/svg+xml">
+              <img src="icon-react.svg" type="image/svg+xml">
               </img>
-              <img src="/icon-typescript.svg" type="image/svg+xml">
+              <img src="icon-typescript.svg" type="image/svg+xml">
               </img>
-              <img src="/icon-javascript.svg" type="image/svg+xml">
+              <img src="icon-javascript.svg" type="image/svg+xml">
               </img>
-              <img src="/icon-html5.svg" type="image/svg+xml">
+              <img src="icon-html5.svg" type="image/svg+xml">
               </img>
-              <img src="/icon-css3-2.svg" type="image/svg+xml">
+              <img src="icon-css3-2.svg" type="image/svg+xml">
               </img>
-              <img src="/icon-bootstrap.svg" type="image/svg+xml">
+              <img src="icon-bootstrap.svg" type="image/svg+xml">
               </img>
-              <img src="/icon-material.svg" type="image/svg+xml">
+              <img src="icon-material.svg" type="image/svg+xml">
               </img>
               {/* <object name='sadasd' alt="Girl in a jacket" data="/icon-microsoft-sql-server.svg" type="image/svg+xml">
               </object> */}
             </div>
             <div className='social-icons'>
-              <img src="/icon-c-2.svg" type="image/svg+xml">
+              <img src="icon-c-2.svg" type="image/svg+xml">
               </img>
-              <img src="/icon-dot-net-2.svg" type="image/svg+xml">
+              <img src="icon-dot-net-2.svg" type="image/svg+xml">
               </img>
-              <img src="/icon-nodejs.svg" type="image/svg+xml">
+              <img src="icon-nodejs.svg" type="image/svg+xml">
               </img>
-              <img src="/icon-nestjs.svg" type="image/svg+xml">
+              <img src="icon-nestjs.svg" type="image/svg+xml">
               </img>
-              <img src="/icon-spring-boot.svg" type="image/svg+xml">
+              <img src="icon-spring-boot.svg" type="image/svg+xml">
               </img>
             </div>
             <div className='social-icons'>
-              <img src="/icons8-oracle-pl-sql.svg" type="image/svg+xml">
+              <img src="icons8-oracle-pl-sql.svg" type="image/svg+xml">
               </img>
-              <img src="/icon-postgres.svg" type="image/svg+xml">
+              <img src="icon-postgres.svg" type="image/svg+xml">
               </img>
-              <img src="/microsoft-sql-server-1.svg" type="image/svg+xml" />
-              <img src="/icon-mongodb.svg" type="image/svg+xml" />
+              <img src="microsoft-sql-server-1.svg" type="image/svg+xml" />
+              <img src="icon-mongodb.svg" type="image/svg+xml" />
             </div>
             <div className='social-icons'>
-              <img src="/icon-postman.svg" type="image/svg+xml">
+              <img src="icon-postman.svg" type="image/svg+xml">
               </img>
-              <img src="/icon-jira.svg" type="image/svg+xml">
+              <img src="icon-jira.svg" type="image/svg+xml">
               </img>
             </div>
             {/* <div className="btn-group">
@@ -335,7 +335,7 @@ function App() {
             <div className="wrapper">
               <div className="testimonial-item">
                 <h1>Banco Mercantil Santa Cruz - BMSC</h1>
-                <img src="/user_generic.jpg" alt="" />
+                <img src="user_generic.jpg" alt="" />
                 <div>
                   <h2>Rodmy</h2>
                   <p>Subgerente de Análisis y Programación - Proyecto Renovar</p>
@@ -351,7 +351,7 @@ function App() {
               </div>
               <div className="testimonial-item">
                 <h1>Banco Nacional de Bolivia - BNB</h1>
-                <img src="/user_generic.jpg" alt="" />
+                <img src="user_generic.jpg" alt="" />
                 <div>
                   <h2>Seiji</h2>
                   <p>Gerente Centro de Innovación</p>
@@ -359,7 +359,7 @@ function App() {
               </div>
               <div className="testimonial-item">
                 <h1>Banco de Crédito - BCP</h1>
-                <img src="/user_generic.jpg" alt="" />
+                <img src="user_generic.jpg" alt="" />
                 <div>
                   <h2>Braian</h2>
                   <p>Supervisor – Analista Técnico I</p>
