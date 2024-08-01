@@ -61,7 +61,7 @@ const Reference = ({ language }) => {
                 </li>
               </ul> */}
                     <p className="copyright">
-                        th4or.dev | v1.0.0
+                        th4or.dev | v1.0.1
                     </p>
                 </footer >
             </div>

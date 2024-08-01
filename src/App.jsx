@@ -79,6 +79,15 @@ function App() {
           <a href="#home" className="logo">th4or
             <span className='logoExtencion'>.dev</span>
           </a>
+          {/* <a onClick={() => changelenguage()} className='language'>.Español</a> */}
+
+          {/* <i className="bx bx-menu" id="menu-icon"></i> */}
+          {/* <button>asdf</button> */}
+
+          {/* <button onClick={() => changelenguage()}>
+            {languageFlag ? 'ES' : 'EN'}
+          </button> */}
+
           <nav className="navbar">
             <a href="#home" className="active">{language.navbar.home}</a>
             <a href="#job">{language.navbar.job}</a>
