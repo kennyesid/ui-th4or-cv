@@ -52,7 +52,7 @@ const Services = ({ language }) => {
                                 <li>Spring Boot 3.1</li>
                                 <li>Java 17</li>
                                 <li>Lombok</li>
-                                <li>pendejo</li>
+                                <li>Docker</li>
                             </ul>
                         </div>
                     </div>
