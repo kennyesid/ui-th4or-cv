@@ -38,8 +38,6 @@ function App() {
   }
 
   useEffect(() => {
-    console.log('timeout');
-
     setTimeout(() => {
       setloading(false);
     }, 4000)
@@ -47,7 +45,8 @@ function App() {
 
   function redirectPageWhatsapp(event) {
     event.preventDefault();
-    window.open("https://wa.link/wekog1", "_blank");
+    // window.open("https://wa.link/wekog1", "_blank");
+    window.open("https://wa.link/ucwfpv", "_blank");
   }
   function redirectPageLinkedin(event) {
     event.preventDefault();

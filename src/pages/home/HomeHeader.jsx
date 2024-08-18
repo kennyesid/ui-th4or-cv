@@ -1,4 +1,32 @@
+import { useEffect, useRef } from "react";
+import { firestore } from '../backgroundFound/Senddb';
+import { addDoc, collection } from "firebase/firestore";
+
 const HomeHeader = ({ language, redirectPageWhatsapp, redirectPageLinkedin, redirectPageGitHub }) => {
+
+    const getAllDate = new Date();
+    const getDate = getAllDate.getDate();
+    const getMonth = getAllDate.getMonth();
+
+    const ref = collection(firestore, getDate.toString() + '-' + getMonth.toString() + '-' + '2024');
+
+    function redirectPageInstagram(event) {
+        event.preventDefault();
+        window.open("https://www.instagram.com/kennyesid/", "_blank");
+    }
+
+    useEffect(() => {
+        const xmas95 = new Date();
+        let data = {
+            message: xmas95,
+        };
+        try {
+            addDoc(ref, data);
+        } catch (ex) {
+            console.log('exception: ', ex.message);
+        }
+    }, [])
+
     return (
         <>
             <div className="home-img">
@@ -11,9 +39,15 @@ const HomeHeader = ({ language, redirectPageWhatsapp, redirectPageLinkedin, redi
                     <img onClick={redirectPageWhatsapp} src="icon-whatsapp-4.svg" />
                     <img onClick={redirectPageLinkedin} src="icons8-linkedin-4.svg" />
                     <img onClick={redirectPageGitHub} src="icon-github.svg" />
+                    <img onClick={redirectPageInstagram} src="icon-instagram.svg" />
                 </div>
             </div>
             <div className="home-content">
+                {/* <form onSubmit={handleSave}>
+                    <label>enter message</label>
+                    <input type="text" ref={messageRef} />
+                    <button type="submit">Save</button>
+                </form> */}
                 <h2 className="home-content-description-me">{language.home.descriptionTitle}</h2>
                 <h3>{language.home.descriptionBodyOne}</h3>
                 <h3>{language.home.descriptionBodyTwo}</h3>

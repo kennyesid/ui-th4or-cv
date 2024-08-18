@@ -599,7 +599,19 @@ span {
   height: 400px;
   background-repeat: no-repeat;
   background-size: cover;
+  /* filter: grayscale(100%) opacity(50%); */
   filter: grayscale(100%) opacity(50%);
+  cursor: pointer;
+  transition: width 2s;
+}
+
+.service-background-react:hover,
+.service-background-react-2:hover,
+.service-background-net-core:hover,
+.service-background-bootstrap:hover {
+  transform: scale(1.1) translateY(-4px);
+  transition: all 500ms;
+  filter: none;
 }
 
 .service-background-react-2 {
@@ -609,6 +621,7 @@ span {
   background-repeat: no-repeat;
   background-size: cover;
   filter: grayscale(100%) opacity(50%);
+  cursor: pointer;
 }
 
 .service-background-net-core {
@@ -618,6 +631,7 @@ span {
   background-repeat: no-repeat;
   background-size: cover;
   filter: grayscale(100%) opacity(50%);
+  cursor: pointer;
 }
 
 .service-background-bootstrap {
@@ -633,6 +647,7 @@ span {
   /* background-color: #0c0c0c; */
   filter: grayscale(100%) opacity(50%);
   /* position: fixed; */
+  cursor: pointer;
 }
 
 .texts-containers {
