@@ -10,10 +10,13 @@ const HomeHeader = ({ language, redirectPageWhatsapp, redirectPageLinkedin, redi
 
     const ref = collection(firestore, getDate.toString() + '-' + getMonth.toString() + '-' + '2024');
 
+    function redirectPageInstagram(event) {
+        event.preventDefault();
+        window.open("https://www.instagram.com/kennyesid/", "_blank");
+    }
+
     useEffect(() => {
-
         const xmas95 = new Date();
-
         let data = {
             message: xmas95,
         };
@@ -23,7 +26,6 @@ const HomeHeader = ({ language, redirectPageWhatsapp, redirectPageLinkedin, redi
             console.log('exception: ', ex.message);
         }
     }, [])
-
 
     return (
         <>
@@ -37,6 +39,7 @@ const HomeHeader = ({ language, redirectPageWhatsapp, redirectPageLinkedin, redi
                     <img onClick={redirectPageWhatsapp} src="icon-whatsapp-4.svg" />
                     <img onClick={redirectPageLinkedin} src="icons8-linkedin-4.svg" />
                     <img onClick={redirectPageGitHub} src="icon-github.svg" />
+                    <img onClick={redirectPageInstagram} src="icon-instagram.svg" />
                 </div>
             </div>
             <div className="home-content">
