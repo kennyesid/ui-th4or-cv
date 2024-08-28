@@ -30,11 +30,11 @@ const HomeHeader = ({ language, redirectPageWhatsapp, redirectPageLinkedin, redi
     return (
         <>
             <div className="home-img">
-                <h1>{language.home.title} <span>Yesid</span></h1>
+                <h1>{language.initHome.title} <span>Yesid</span></h1>
                 <h3><span>FullStack</span> Developer</h3>
                 <img className='home-img-principal' src="me-portafolio.png" alt="" />
                 <div className='social-icons'>
-                    <h2 className='social-icons-h2'>{language.home.contactMe}</h2>
+                    <h2 className='social-icons-h2'>{language.initHome.contactMe}</h2>
                     <h3>Favor de contactarse con mi persona por los siguientes medios para poder enviarle mi CV con las respectivas referencias.</h3>
                     <img onClick={redirectPageWhatsapp} src="icon-whatsapp-4.svg" />
                     <img onClick={redirectPageLinkedin} src="icons8-linkedin-4.svg" />
@@ -48,11 +48,11 @@ const HomeHeader = ({ language, redirectPageWhatsapp, redirectPageLinkedin, redi
                     <input type="text" ref={messageRef} />
                     <button type="submit">Save</button>
                 </form> */}
-                <h2 className="home-content-description-me">{language.home.descriptionTitle}</h2>
-                <h3>{language.home.descriptionBodyOne}</h3>
-                <h3>{language.home.descriptionBodyTwo}</h3>
-                <h3>{language.home.descriptionBodyThree}</h3>
-                <h3>{language.home.descriptionBodyFor}</h3>
+                <h2 className="home-content-description-me">{language.initHome.descriptionTitle}</h2>
+                <h3>{language.initHome.descriptionBodyOne}</h3>
+                {/* <h3>{language.initHome.descriptionBodyTwo}</h3>
+                <h3>{language.initHome.descriptionBodyThree}</h3>
+                <h3>{language.initHome.descriptionBodyFor}</h3> */}
                 <div className="social-icons">
                     <img src="icon-react.svg" type="image/svg+xml">
                     </img>

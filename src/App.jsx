@@ -10,9 +10,13 @@ import Reference from './pages/reference/Reference';
 import './App.css';
 import './index.css';
 
+// const onChangeLanguage = dataInformation.spanish;
+
 function App() {
 
-  const [language, setLanguage] = useState(dataInformation.spanish);
+  const [languageDb, setLanguageDb] = useState();
+  const [language, setLanguage] = useState();
+  // const [language, setLanguage] = useState(dataInformation.spanish);
   const [languageFlag, setLanguageFlag] = useState(true);
   const [loading, setloading] = useState(true);
 
@@ -38,6 +42,8 @@ function App() {
   }
 
   useEffect(() => {
+    setLanguageDb(dataInformation);
+    setLanguage(dataInformation.english);
     setTimeout(() => {
       setloading(false);
     }, 4000)
@@ -56,11 +62,19 @@ function App() {
     event.preventDefault();
     window.open("https://github.com/kennyesid/kennyesid", "_blank");
   }
-  function changelenguage() {
-    console.log('changelenguage:', languageFlag);
-    console.log('changelenguage:', language)
-    setLanguageFlag(!languageFlag);
-    setLanguage(languageFlag ? dataInformation.spanish : dataInformation.english);
+  function changelenguage(event) {
+    event.preventDefault();
+    // debugger;
+    const ln = language.navbar.home == 'Inicio' ? languageDb.english : languageDb.spanish;
+    setLanguage(ln);
+    // setLanguage(setLanguage(language.navbar.home = 'Inicio' ? languageDb.english : languageDb.spanish));
+    // console.log('changelenguage:', languageFlag);
+    // console.log('changelenguage:', language)
+
+    // setLanguage(language.navbar.home = 'Inicio' ? dataInformation.english : dataInformation.spanish)
+
+    // setLanguageFlag(!languageFlag);
+    // setLanguage(languageFlag ? dataInformation.spanish : dataInformation.english);
   }
 
   if (loading) {
@@ -75,8 +89,12 @@ function App() {
     return (
       <>
         <header className="header">
-          <a href="#home" className="logo">th4or
+          <a onClick={e => changelenguage(e)} className="logo">th4or
             <span className='logoExtencion'>.dev</span>
+            <a>.{language.language}</a>
+            <img src="icon-touch.svg" type="image/svg+xml">
+            </img>
+            <a style={{ fontSize: '12px', fontWeight: 'bold', position: 'absolute' }}>{language.click}</a>
           </a>
           {/* <a onClick={() => changelenguage()} className='language'>.Español</a> */}
 
@@ -94,7 +112,7 @@ function App() {
             <a href="#reference">{language.navbar.reference}</a>
           </nav>
         </header>
-
+        {/* <h1>holas</h1> */}
         <section className="home" id="home">
           <HomeHeader language={language} redirectPageWhatsapp={redirectPageWhatsapp} redirectPageLinkedin={redirectPageLinkedin} redirectPageGitHub={redirectPageGitHub} />
         </section >

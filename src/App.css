@@ -3,11 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  /* border: none;
-  outline: none; */
   scroll-behavior: smooth;
-  /* font-family: "Poppins", sans-serif; */
-  /* font-family: "Reenie Beanie", cursive; */
   font-family: "Poppins", sans-serif;
   font-weight: 200;
   font-style: normal;
@@ -93,7 +89,12 @@ body {
 }
 
 .logoExtencion {
-  text-shadow: 0 0 25px #06e8eb;
+  /* text-shadow: 0 0 25px #06e8eb; */
+  text-shadow: 0 0 25px #ff4459;
+}
+
+.languageCss {
+  text-shadow: 0 0 25px #3b40d9 !important;
 }
 
 .language {
@@ -171,9 +172,9 @@ span {
   color: var(--main-color);
 }
 
-.logo span {
+/* .logo span {
   color: var(--main-color);
-}
+} */
 
 .home-content h3 {
   margin-bottom: 2rem;
@@ -526,9 +527,16 @@ span {
   font-weight: 500;
 }
 
-.timeline-content p {
+/* .timeline-content p {
   color: white;
   font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+} */
+
+.timeline-content ul li {
+  color: white;
+  font-size: 14px;
   font-weight: 300;
   line-height: 22px;
 }
