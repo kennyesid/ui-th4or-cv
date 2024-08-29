@@ -12,7 +12,7 @@ const dataInformation = {
         initHome: {
             title: 'Hola, soy',
             contactMe: 'Contactame:',
-            contactMeDescription: 'Contáctame por los siguientes medios para recibir mi CV y referencias.',
+            contactMeDescription: 'Si desea recibir mi CV junto con las referencias correspondientes, por favor, no dude en contactarme a través de los siguientes medios.',
             descriptionTitle: 'Sobre mi:',
             // descriptionBodyOne: 'Soy un desarrollador a quien le apasiona automatizar problemas concurrentes los cuales se presentan cotidianamente en el trabajo.',
             descriptionBodyOne: 'Desarrollador FullStack con 8 años de experiencia en la creación de soluciones escalables y eficientes tanto en backend como en frontend. Especializado en .Net Core, Node.js, Nest.js, React, JavaScript y TypeScript, con un historial probado en el desarrollo de aplicaciones concurrentes y de alto rendimiento. Me destaco por mi capacidad para adaptarme rápidamente a nuevos equipos de trabajo, mi enfoque en la puntualidad y la organización, y mi competitividad que impulsa la excelencia en cada proyecto.',
@@ -67,7 +67,8 @@ const dataInformation = {
         initHome: {
             title: 'Hi, I\'m',
             contactMe: 'Contact with me:',
-            descriptionTitle: 'Sobre mi:',
+            contactMeDescription: 'If you would like to receive my CV along with the relevant references, please do not hesitate to contact me through the following means.',
+            descriptionTitle: 'About me:',
             descriptionBodyOne: 'Full Stack Developer with 8 years of experience in creating scalable and efficient solutions for both backend and frontend. Specialized in .Net Core, Node.js, Nest.js, React, JavaScript, and TypeScript, with a proven track record in developing concurrent and high-performance applications. I excel in quickly adapting to new teams, maintaining a strong focus on punctuality and organization, and my competitive nature drives excellence in every project.',
             descriptionBodyTwo: 'En mis 8 años de trabajo he realizado múltiples desarrollos como servicios rest, soap, páginas web, servicios Windows, optimización de consultas en base de datos etc...',
             descriptionBodyThree: 'Me integro rápido al equipo de trabajo y me gusta implementar nuevas soluciones con nuevas tecnologías.',

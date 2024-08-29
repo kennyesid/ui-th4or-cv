@@ -35,7 +35,8 @@ const HomeHeader = ({ language, redirectPageWhatsapp, redirectPageLinkedin, redi
                 <img className='home-img-principal' src="me-portafolio.png" alt="" />
                 <div className='social-icons'>
                     <h2 className='social-icons-h2'>{language.initHome.contactMe}</h2>
-                    <h3>Favor de contactarse con mi persona por los siguientes medios para poder enviarle mi CV con las respectivas referencias.</h3>
+                    {/* <h3>Favor de contactarse con mi persona por los siguientes medios para poder enviarle mi CV con las respectivas referencias.</h3> */}
+                    <h3>{language.initHome.contactMeDescription}</h3>
                     <img onClick={redirectPageWhatsapp} src="icon-whatsapp-4.svg" />
                     <img onClick={redirectPageLinkedin} src="icons8-linkedin-4.svg" />
                     <img onClick={redirectPageGitHub} src="icon-github.svg" />
