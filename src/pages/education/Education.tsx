@@ -1,6 +1,13 @@
 import React from "react";
 
-const Education = ({ language }) => {
+import dataInformation from "../../features/home/services/dataInformation"; // adjust path if needed
+type LanguageType = typeof dataInformation.english;
+
+interface EducationProps {
+  language: LanguageType;
+}
+
+const Education: React.FC<EducationProps> = ({ language }) => {
   console.log(language);
   return (
     <>
@@ -22,7 +29,6 @@ const Education = ({ language }) => {
               <li>{language.job.jobGanadero.three}</li>
               <li>{language.job.jobGanadero.for}</li>
             </ul>
-            {/* <p>Lo más importante que realice es desarrollar un servicio rest con spring boot el cual interactúa con el core del banco, este servicio fue creado en la interacción con el<span className='span-relieve'> Banco Central de Bolivia </span> el cual realiza abonos masivos de múltiples clientes, donde se controló el estado de la cuenta, actualización de saldos, horario en el que se puede realizar este tipo de transacciones, seguridad con jwt, Sha256 y mas…</p> */}
           </div>
         </div>
         <div className="timeline-item">
@@ -36,10 +42,7 @@ const Education = ({ language }) => {
             <ul>
               <li>{language.job.jobBMSC.one}</li>
               <li>{language.job.jobBMSC.two}</li>
-              {/* <li>{language.job.jobBMSC.three}</li> */}
             </ul>
-            {/* <p>Estuve a cargo de los <span className='span-relieve'>ATM’s</span> del Banco el cual en su momento se migro el core bancario para lo cual se contrató una empresa externa el cual realizo un servicio rest y yo era el encargado de controlar todo el flujo del ATM como ser consultas, extracto, retiro, depósito y demás.</p>
-                        <p>Obviamente todas respuestas que el ATM visualiza al cliente se las controlo con el documento ISO 8586.</p> */}
           </div>
         </div>
         <div className="timeline-item">
@@ -56,8 +59,6 @@ const Education = ({ language }) => {
               <li>{language.job.jobBnb.one}</li>
               <li>{language.job.jobBnb.two}</li>
             </ul>
-            {/* <p>La principal función que realice es realizar un dashboard donde mostraba todas las transacciones realizadas en plataforma, ATM, BNB Movil y demás canales. </p>
-                        <p>Este dashboard mostraba en torta y barra de porcentajes las transacciones realizadas por día, semana, mes y año.</p> */}
           </div>
         </div>
         <div className="timeline-item">
@@ -74,7 +75,6 @@ const Education = ({ language }) => {
               <li>{language.job.jobBCP.three}</li>
               <li>{language.job.jobBCP.for}</li>
             </ul>
-            {/* <p>El BCP fue mi maestra y dio pie a aprender todas las tecnologías que hoy en día conozco y también tuve un muy buen mentor que me enseñó a manejar correctamente las variables, acá realice muchas cosillas pero lo más sobresaliente fue de ser parte del backend de la aplicación Soli BCP el cual al principio se realizó entre 5 integrantes y se utilizó la modalidad de la Orquestación para Backend, al final mi persona fue el encargado principal de manejar todo el servicio rest que realiza las transacciones bancarias, pagos a servicios y demás.</p> */}
           </div>
         </div>
       </div>

@@ -1,4 +1,4 @@
-const dataInformation = {
+const dataInformation: DataInformation = {
   spanish: {
     language: "Español",
     click: "tocame",
@@ -17,7 +17,6 @@ const dataInformation = {
       descriptionTitle: "Sobre mi:",
       descriptionBodyOne:
         "Desarrollador con más de 8 años de experiencia en la industria bancaria, especializado en la creación de aplicaciones web y microservicios utilizando tecnologías como .NET Core, Node.js, Angular, React, SQL Server etc... He liderado proyectos clave como la implementación de servicios REST para transacciones bancarias y la migración de core bancarios, optimizando procesos y mejorando la eficiencia operativa. Además, tengo experiencia en la integración con sistemas externos, incluyendo la automatización de procesos para resolver incidencias en la facturación electrónica. Mi enfoque está en entregar soluciones robustas, mejorar la calidad de los sistemas y trabajar en equipo para lograr resultados efectivos.",
-      // "Desarrollador FullStack con 8 años de experiencia en la creación de soluciones escalables y eficientes tanto en backend como en frontend. Especializado en .Net Core, Node.js, Nest.js, React, JavaScript y TypeScript, con un historial probado en el desarrollo de aplicaciones concurrentes y de alto rendimiento. Me destaco por mi capacidad para adaptarme rápidamente a nuevos equipos de trabajo, mi enfoque en la puntualidad y la organización, y mi competitividad que impulsa la excelencia en cada proyecto.",
       descriptionBodyTwo:
         "En mis 8 años de trabajo he realizado múltiples desarrollos como servicios rest, soap, páginas web, servicios Windows, optimización de consultas en base de datos etc...",
       descriptionBodyThree:
@@ -79,7 +78,6 @@ const dataInformation = {
       descriptionTitle: "About me:",
       descriptionBodyOne:
         "Software developer with over 8 years of experience in the banking industry, specializing in the development of web applications and microservices using technologies such as .NET Core, Node.js, Angular, React, SQL Server etc... I have led key projects, including the implementation of RESTful services for banking transactions and core banking migrations, optimizing processes and improving operational efficiency. I also have experience integrating with external systems, including automating processes to resolve issues in electronic invoicing. My focus is on delivering robust solutions, improving system quality, and working collaboratively to achieve effective results.",
-      // "Full Stack Developer with 8 years of experience in creating scalable and efficient solutions for both backend and frontend. Specialized in .Net Core, Node.js, Nest.js, React, JavaScript, and TypeScript, with a proven track record in developing concurrent and high-performance applications. I excel in quickly adapting to new teams, maintaining a strong focus on punctuality and organization, and my competitive nature drives excellence in every project.",
       descriptionBodyTwo:
         "En mis 8 años de trabajo he realizado múltiples desarrollos como servicios rest, soap, páginas web, servicios Windows, optimización de consultas en base de datos etc...",
       descriptionBodyThree:

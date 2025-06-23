@@ -1,6 +1,11 @@
-import React from "react";
+import dataInformation from "../../features/home/services/dataInformation"; // adjust path if needed
+type LanguageType = typeof dataInformation.english;
 
-const Reference = ({ language }) => {
+interface ReferenceProps {
+  language: LanguageType;
+}
+
+const Reference: React.FC<ReferenceProps> = ({ language }) => {
   return (
     <>
       <div className="testimonials-box">
@@ -47,7 +52,7 @@ const Reference = ({ language }) => {
             </div>
           </div>
         </div>
-        <footer footer className="footer">
+        <footer className="footer">
           {/* <div className="social">
                 <a href="#"><i className="bx bx1-linkedin"></i></a>
                 <a href="#"><i className="bx bx1-linkedin"></i></a>
