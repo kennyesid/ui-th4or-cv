@@ -34,14 +34,6 @@ const Reference: React.FC<ReferenceProps> = ({ language }) => {
               <h2>Rodmy</h2>
               <p>Subgerente de Análisis y Programación - Proyecto Renovar</p>
             </div>
-            {/* <div className="rating">
-                  <i className="bx bxs-star" id="star"></i>
-                  <i className="bx bxs-star" id="star"></i>
-                  <i className="bx bxs-star" id="star"></i>
-                  <i className="bx bxs-star" id="star"></i>
-                  <i className="bx bxs-star" id="star"></i>
-                </div> */}
-            {/* <p>pero que carajos paso por aca</p> */}
           </div>
           <div className="testimonial-item">
             <h1>Banco Ganadero</h1>
@@ -53,27 +45,7 @@ const Reference: React.FC<ReferenceProps> = ({ language }) => {
           </div>
         </div>
         <footer className="footer">
-          {/* <div className="social">
-                <a href="#"><i className="bx bx1-linkedin"></i></a>
-                <a href="#"><i className="bx bx1-linkedin"></i></a>
-                <a href="#"><i className="bx bx1-linkedin"></i></a>
-                <a href="#"><i className="bx bx1-linkedin"></i></a>
-              </div> */}
-          {/* <ul className="list">
-                <li>
-                  <a href="#">FAQ</a>
-                </li>
-                <li>
-                  <a href="#">Services</a>
-                </li>
-                <li>
-                  <a href="#">About Me</a>
-                </li>
-                <li>
-                  <a href="#">Contact</a>
-                </li>
-              </ul> */}
-          <p className="copyright">th4or.dev | v1.0.2</p>
+          <p className="copyright">th4or.dev | v2.0.0</p>
         </footer>
       </div>
     </>
