@@ -65,6 +65,7 @@ const HomeHeader: React.FC<HomeHeaderProps> = ({
           <img onClick={redirectPageLinkedin} src="icons8-linkedin-4.svg" />
           <img onClick={redirectPageGitHub} src="icon-github.svg" />
           <img onClick={redirectPageInstagram} src="icon-instagram.svg" />
+          <img onClick={redirectPageWhatsapp} src="icon-whatsapp.svg" />
         </div>
       </div>
       <div className="home-content">

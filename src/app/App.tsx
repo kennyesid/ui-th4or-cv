@@ -59,7 +59,8 @@ function App(): JSX.Element {
 
   function redirectPageWhatsapp(event: { preventDefault: () => void }) {
     event.preventDefault();
-    window.open("https://wa.link/ucwfpv", "_blank");
+    window.open("https://wa.me/59160012206", "_blank");
+    // window.open("https://wa.link/ucwfpv", "_blank");
   }
 
   function redirectPageLinkedin(event: { preventDefault: () => void }) {

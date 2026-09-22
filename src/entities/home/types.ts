@@ -45,7 +45,7 @@ interface LanguageContent {
   job: JobContent;
 }
 
-interface DataInformation {
+export interface DataInformation {
   spanish: LanguageContent;
   english: LanguageContent;
 }

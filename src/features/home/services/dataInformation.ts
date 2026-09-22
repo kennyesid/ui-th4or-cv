@@ -1,3 +1,5 @@
+import { DataInformation } from "../../../entities/home/types";
+
 const dataInformation: DataInformation = {
   spanish: {
     language: "Español",
