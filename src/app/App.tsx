@@ -83,6 +83,23 @@ function App(): JSX.Element {
     setLanguage(ln);
   }
 
+  function downloadCV(event: React.MouseEvent<HTMLAnchorElement>) {
+    event.preventDefault();
+    const cvFile =
+      language.language === "Español"
+        ? "/cv/CV-YASC.pdf"
+        : "/cv/CV-YASC-EN.pdf";
+
+    const link = document.createElement("a");
+    link.href = cvFile;
+    link.download = language.language === "Español"
+      ? "CV-YASC.pdf"
+      : "CV-YASC-EN.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+
   if (loading) {
     return <Loading />;
   } else {
@@ -104,6 +121,16 @@ function App(): JSX.Element {
               {language.click}
             </a>
           </a>
+
+          <a
+            onClick={(e) => downloadCV(e)}
+            className="download-cv"
+            title={language.downloadCV}
+          >
+            {/* <i className="bx bx-download"></i> */}
+            {language.downloadCV}
+          </a>
+
           <nav className="navbar">
             <a href="#home">{language.navbar.home}</a>
             <a href="#job">{language.navbar.job}</a>

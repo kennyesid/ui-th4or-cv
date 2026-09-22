@@ -2835,3 +2835,40 @@ span {
   color: #fcffff;
   font-weight: 600;
 }
+
+/* NUEVO */
+.download-cv {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  /* background-color: #007bff; */
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 400;
+  border-radius: 6px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-left: auto;   /* Empuja el botón hacia la derecha */
+  margin-right: 2rem;  /* Separación con el navbar */
+  white-space: nowrap;
+}
+
+.download-cv:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.download-cv i {
+  font-size: 1.6rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .download-cv {
+    padding: 0.4rem 0.8rem;
+    font-size: 1.1rem;
+    margin-right: 1rem;
+  }
+}

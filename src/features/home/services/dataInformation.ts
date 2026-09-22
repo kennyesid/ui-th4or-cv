@@ -3,6 +3,7 @@ import { DataInformation } from "../../../entities/home/types";
 const dataInformation: DataInformation = {
   spanish: {
     language: "Español",
+    downloadCV: "Descargar CV",
     click: "tocame",
     navbar: {
       home: "Inicio",
@@ -30,6 +31,13 @@ const dataInformation: DataInformation = {
       title: "titulo en español",
     },
     job: {
+      jobConsultorFreelance: {
+        jobTitle: "Consultor Externo - Freelance",
+        one: "SAVI: Modifiqué módulos existentes y agregué nuevos para mejorar visualización y reportes. Implementé envío de WhatsApp y recordatorios automáticos por solicitud.",
+        two: "SAVI: Desarrollé e integré un chatbot como iniciativa propia, facilitando búsquedas rápidas y acceso ágil a la información del sistema.",
+        three: "SILOG: Modifiqué módulos existentes y agregué nuevos para optimizar visualización y generación de reportes a solicitud del cliente.",
+        for: ""
+      },
       jobGanadero: {
         jobTitle: "Desarrollador de Software",
         one: "Diseñé una solución en React y .NET Core 8 para regularizar hasta 20,000 facturas electrónicas con un solo clic, reduciendo el tiempo de procesamiento de semanas a minutos.",
@@ -63,6 +71,7 @@ const dataInformation: DataInformation = {
     },
   },
   english: {
+    downloadCV: "Download CV",
     language: "English",
     click: "touch me",
     navbar: {
@@ -91,6 +100,13 @@ const dataInformation: DataInformation = {
       title: "title en english",
     },
     job: {
+      jobConsultorFreelance: {
+        jobTitle: "External Consultant - Software Development",
+        one: "SAVI: Modified existing modules and added new ones to improve visualization and reports. Implemented WhatsApp messaging and automatic reminders per request.",
+        two: "SAVI: Developed and integrated a chatbot on my own initiative, enabling quick searches and agile access to system information.",
+        three: "SILOG: Modified existing modules and added new ones to optimize visualization and report generation upon client request.",
+        for: ""
+      },
       jobGanadero: {
         jobTitle: "Software Developer",
         one: "Designed an integrated solution using React and .NET Core 8 to process up to 20,000 electronic invoices with a single click, reducing processing time from weeks to minutes.",

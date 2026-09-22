@@ -30,6 +30,7 @@ interface JobExperience {
 }
 
 interface JobContent {
+  jobConsultorFreelance: JobExperience;
   jobGanadero: JobExperience;
   jobBMSC: JobExperience;
   jobBnb: JobExperience;
@@ -43,6 +44,7 @@ interface LanguageContent {
   initHome: InitHomeContent;
   header: HeaderContent;
   job: JobContent;
+  downloadCV: string;
 }
 
 export interface DataInformation {

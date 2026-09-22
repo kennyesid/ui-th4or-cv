@@ -15,11 +15,29 @@ const Education: React.FC<EducationProps> = ({ language }) => {
       <div className="timeline-items">
         <div className="timeline-item">
           <div className="timeline-dot"></div>
+          <div className="timeline-date">2025/11 - Actual</div>
+          <div className="timeline-content">
+            <div>
+              <h3 className="timeline-content-right">Consultor Externo - Freelance</h3>
+              <h1 className="timeline-content-right timeline-content-cargo">
+                {language.job.jobConsultorFreelance.jobTitle}
+              </h1>
+            </div>
+            <ul>
+              <li>{language.job.jobConsultorFreelance.one}</li>
+              <li>{language.job.jobConsultorFreelance.two}</li>
+              <li>{language.job.jobConsultorFreelance.three}</li>
+              {/* <li>{language.job.jobConsultorFreelance.for}</li> */}
+            </ul>
+          </div>
+        </div>
+        <div className="timeline-item">
+          <div className="timeline-dot"></div>
           <div className="timeline-date">2021/10 - 2024/07</div>
           <div className="timeline-content">
             <div>
-              <h3 className="timeline-content-right">Banco Ganadero</h3>
-              <h1 className="timeline-content-right timeline-content-cargo">
+              <h3 className="">Banco Ganadero</h3>
+              <h1 className="timeline-content-cargo">
                 {language.job.jobGanadero.jobTitle}
               </h1>
             </div>
@@ -35,8 +53,8 @@ const Education: React.FC<EducationProps> = ({ language }) => {
           <div className="timeline-dot"></div>
           <div className="timeline-date">2019/03 - 2021/10</div>
           <div className="timeline-content">
-            <h3>Banco Mercantil Santa Cruz</h3>
-            <h1 className="timeline-content-cargo">
+            <h3 className="timeline-content-right">Banco Mercantil Santa Cruz</h3>
+            <h1 className="timeline-content-right timeline-content-cargo">
               {language.job.jobBMSC.jobTitle}
             </h1>
             <ul>
@@ -49,10 +67,10 @@ const Education: React.FC<EducationProps> = ({ language }) => {
           <div className="timeline-dot"></div>
           <div className="timeline-date">2018/04 - 2018/10</div>
           <div className="timeline-content">
-            <h3 className="timeline-content-right">
+            <h3 className="">
               Banco Nacional de Bolivia
             </h3>
-            <h1 className="timeline-content-right timeline-content-cargo">
+            <h1 className="timeline-content-cargo">
               {language.job.jobBnb.jobTitle}
             </h1>
             <ul>
@@ -65,8 +83,8 @@ const Education: React.FC<EducationProps> = ({ language }) => {
           <div className="timeline-dot"></div>
           <div className="timeline-date">2015/03 - 2018/04</div>
           <div className="timeline-content">
-            <h3>Banco de Crédito de Bolivia</h3>
-            <h1 className="timeline-content-cargo">
+            <h3 className="timeline-content-right">Banco de Crédito de Bolivia</h3>
+            <h1 className="timeline-content-right timeline-content-cargo">
               {language.job.jobBCP.jobTitle}
             </h1>
             <ul>
