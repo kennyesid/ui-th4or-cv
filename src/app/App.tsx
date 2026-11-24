@@ -14,6 +14,7 @@ type DataInformationType = typeof dataInformation;
 import "../styles/App.css";
 import "../styles/index.css";
 import Loading from "../pages/loading/Loading";
+import Certifications from "../pages/certification/Certifications";
 
 function App(): JSX.Element {
   const [languageDb, setLanguageDb] =
@@ -111,7 +112,7 @@ function App(): JSX.Element {
             <span className="logoExtencion">.dev</span>
             <a>.{language.language}</a>
             <img src="icon-touch.svg" alt="touch icon" />
-            <a
+            <span
               style={{
                 fontSize: "12px",
                 fontWeight: "bold",
@@ -119,7 +120,7 @@ function App(): JSX.Element {
               }}
             >
               {language.click}
-            </a>
+            </span>
           </a>
 
           <a
@@ -151,6 +152,9 @@ function App(): JSX.Element {
         </section>
         <section className="services" id="services">
           <Services language={language} />
+        </section>
+        <section className="certifications" id="certifications">
+          <Certifications language={language} />
         </section>
         <section className="testimonials" id="reference">
           <Reference language={language} />

@@ -996,6 +996,10 @@ span {
     grid-template-columns: repeat(2, 1fr);
     margin: 0 5rem;
   }
+
+  .cert-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 991px) {
@@ -1116,6 +1120,14 @@ span {
 
   .services-container {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .cert-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .cert-title {
+    font-size: 4.5rem;
   }
 
   /* .home-img social-icons img {
@@ -2871,4 +2883,213 @@ span {
     font-size: 1.1rem;
     margin-right: 1rem;
   }
+}
+
+
+/* CSS CERTIFICATIONS */
+.certifications {
+  background: linear-gradient(#02253d, #012e46, #153f59, #02253d);
+}
+
+.cert-container {
+  width: 100%;
+  margin: auto;
+}
+
+.cert-header {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.cert-title {
+  font-size: 6rem;
+  font-weight: 200;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.cert-title span {
+  color: var(--main-color);
+}
+
+.cert-subtitle {
+  font-size: 2rem;
+  font-weight: 300;
+  color: var(--text-color);
+}
+
+.cert-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.cert-filters {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+}
+
+.cert-filter-btn,
+.cert-branch-select {
+  padding: 1rem 2rem;
+  border-radius: 4rem;
+  border: 2px solid var(--main-color);
+  background: rgba(0, 0, 0, 0.35);
+  color: var(--text-color);
+  font-size: 1.6rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.cert-filter-btn:hover,
+.cert-branch-select:hover,
+.cert-filter-btn.is-active,
+.cert-branch-select.is-active {
+  background: var(--main-color);
+  color: black;
+  font-weight: 600;
+  box-shadow: 0 0 25px var(--main-color);
+}
+
+.cert-branch-select option {
+  background: #02253d;
+  color: var(--text-color);
+}
+
+.cert-count-badge {
+  padding: 1rem 2rem;
+  border-radius: 4rem;
+  background: rgba(0, 0, 0, 0.45);
+  border: 2px solid var(--main-color);
+  color: var(--text-color);
+  font-size: 1.6rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.cert-count-badge strong {
+  color: var(--main-color);
+  font-weight: 700;
+}
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.cert-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2.5rem;
+  border-radius: 2rem;
+  border: 3px solid var(--main-color);
+  background: rgba(0, 0, 0, 0.5);
+  color: var(--text-color);
+  transition: 0.4s ease-in-out;
+}
+
+.cert-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 0 50px var(--main-color);
+}
+
+.cert-card-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.cert-badge {
+  font-size: 1.4rem;
+  padding: 0.4rem 1.2rem;
+  border-radius: 4rem;
+  font-weight: 600;
+}
+
+.cert-badge-category {
+  background: var(--main-color);
+  color: black;
+}
+
+.cert-badge-branch {
+  background: transparent;
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+}
+
+.cert-card-title {
+  font-size: 2.2rem;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--text-color);
+  margin-bottom: 1.2rem;
+}
+
+.cert-meta {
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: var(--main-color);
+  margin-bottom: 1.5rem;
+  display: flex;
+  gap: 0.8rem;
+}
+
+.cert-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-bottom: 2rem;
+}
+
+.cert-skill-tag {
+  font-size: 1.4rem;
+  font-weight: 400;
+  padding: 0.4rem 1rem;
+  border-radius: 1rem;
+  background: rgba(156, 210, 211, 0.12);
+  color: var(--text-color);
+}
+
+.cert-card-footer {
+  margin-top: auto;
+  padding-top: 1rem;
+}
+
+.cert-link-btn {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  border-radius: 4rem;
+  background: var(--main-color);
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 600;
+  transition: 0.3s ease-in-out;
+}
+
+.cert-link-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px var(--main-color);
+}
+
+.cert-state-box {
+  text-align: center;
+  padding: 4rem 2rem;
+  border-radius: 2rem;
+  border: 2px dashed var(--main-color);
+  font-size: 2rem;
+  color: var(--text-color);
+}
+
+.cert-error {
+  color: #ff6b6b;
 }
