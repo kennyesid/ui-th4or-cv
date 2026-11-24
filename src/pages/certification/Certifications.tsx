@@ -48,7 +48,7 @@ export interface CertificationsProps {
     };
 }
 
-const LATEST_LIMIT = 8;
+const LATEST_LIMIT = 9;
 const categoriesService = new DatabaseService<CategoryEntity>("categories");
 
 // ==========================================
@@ -213,9 +213,19 @@ const Certifications: React.FC<CertificationsProps> = ({ language }) => {
     return (
         <div className="cert-container">
             <div className="cert-header">
-                <h2 className="cert-title">
+                {/* <h2 className="cert-title">
                     {isSpanish ? "Mis" : "My"}{" "}
                     <span>{isSpanish ? "Certificados" : "Certifications"}</span>
+                </h2> */}
+                <h2 className="cert-title">
+                    {isSpanish ? "Mis" : "My"}{" "}
+                    <span>{isSpanish ? "Certificados" : "Certifications"}</span>{" "}
+                    <span className="cert-total-wrapper">
+                        - {isSpanish ? "Total" : "Total"}
+                        <span className="cert-cart-bubble" style={{ color: '#02253d' }}>
+                            {allCertificationsSorted.length}
+                        </span>
+                    </span>
                 </h2>
                 <p className="cert-subtitle">
                     {filterMode === "all"
@@ -324,11 +334,11 @@ const Certifications: React.FC<CertificationsProps> = ({ language }) => {
 
                                 <div className="cert-meta">
                                     <span>{formatDate(cert.issued_at)}</span>
-                                    {cert.hours ? (
+                                    {/* {cert.hours ? (
                                         <span>
                                             • {cert.hours} {isSpanish ? "hrs" : "hrs"}
                                         </span>
-                                    ) : null}
+                                    ) : null} */}
                                 </div>
 
                                 {cert.skills && cert.skills.length > 0 && (
