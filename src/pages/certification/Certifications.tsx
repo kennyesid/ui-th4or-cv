@@ -83,7 +83,7 @@ const Certifications: React.FC<CertificationsProps> = ({ language }) => {
                     "sort_order",
                     true
                 );
-
+                console.log('data::', JSON.stringify(rows));
                 if (isMounted) {
                     setCategoriesWithCerts(rows);
                 }
