@@ -10,6 +10,7 @@ export interface CategoryEntity {
     description: string | null;
     sort_order: number;
     image_bussiness_url: string | null;
+    image_logo: string | null;
     state: boolean;
 }
 
@@ -36,6 +37,8 @@ export interface CategoryWithCertifications extends CategoryEntity {
 // Certificación enriquecida con el nombre de su categoría para renderizar más rápido
 export interface FlattenedCertification extends CertificationEntity {
     categoryName: string;
+    image_bussiness_url: string;
+    image_logo: string;
 }
 
 export type FilterMode = "all" | "category" | "branch";
@@ -127,6 +130,8 @@ const Certifications: React.FC<CertificationsProps> = ({ language }) => {
                 flat.push({
                     ...cert,
                     categoryName: category.name,
+                    image_bussiness_url: category.image_bussiness_url ?? '',
+                    image_logo: category.image_logo ?? ''
                 });
             }
         }
@@ -166,6 +171,7 @@ const Certifications: React.FC<CertificationsProps> = ({ language }) => {
         }
 
         // Por defecto ("all"): últimos 8 certificados según issued_at
+        console.log('review:: ', JSON.stringify(allCertificationsSorted.slice(0, LATEST_LIMIT))) // 318
         return allCertificationsSorted.slice(0, LATEST_LIMIT);
     }, [allCertificationsSorted, filterMode, selectedCategoryId, selectedBranch]);
 
@@ -214,10 +220,6 @@ const Certifications: React.FC<CertificationsProps> = ({ language }) => {
     return (
         <div className="cert-container">
             <div className="cert-header">
-                {/* <h2 className="cert-title">
-                    {isSpanish ? "Mis" : "My"}{" "}
-                    <span>{isSpanish ? "Certificados" : "Certifications"}</span>
-                </h2> */}
                 <h2 className="cert-title">
                     {isSpanish ? "Mis" : "My"}{" "}
                     <span>{isSpanish ? "Certificados" : "Certifications"}</span>{" "}
@@ -287,14 +289,6 @@ const Certifications: React.FC<CertificationsProps> = ({ language }) => {
                         ))}
                     </select>
                 </div>
-
-                {/* Contador de certificados visibles en la misma fila */}
-                <div className="cert-count-badge" aria-live="polite">
-                    <span>
-                        {isSpanish ? "Certificados:" : "Certifications:"}{" "}
-                        <strong>{visibleCertifications.length}</strong>
-                    </span>
-                </div>
             </div>
 
             {loading && (
@@ -322,38 +316,43 @@ const Certifications: React.FC<CertificationsProps> = ({ language }) => {
 
                         return (
                             <article key={cert.id} className="cert-card">
-                                <div className="cert-card-top">
+                                {cert.image_bussiness_url && (
+                                    <img
+                                        src={cert.image_bussiness_url}
+                                        alt=""
+                                        aria-hidden="true"
+                                        className="cert-card-bg-img"
+                                    />
+                                )}
+                                {/* <div className="cert-card-top">
                                     <span className="cert-badge cert-badge-category">
                                         {cert.categoryName}
                                     </span>
                                     <span className="cert-badge cert-badge-branch">
                                         {cert.branch}
                                     </span>
-                                </div>
+                                </div> */}
 
                                 <h3 className="cert-card-title">{cert.title}</h3>
-
-                                <div className="cert-meta">
+                                <br />
+                                {/* <div className="cert-meta">
                                     <span>{formatDate(cert.issued_at)}</span>
-                                    {/* {cert.hours ? (
-                                        <span>
-                                            • {cert.hours} {isSpanish ? "hrs" : "hrs"}
-                                        </span>
-                                    ) : null} */}
-                                </div>
+                                </div> */}
 
-                                {cert.skills && cert.skills.length > 0 && (
-                                    <div className="cert-skills">
-                                        {cert.skills.slice(0, 4).map((skill) => (
-                                            <span
-                                                key={`${cert.id}-${skill}`}
-                                                className="cert-skill-tag"
-                                            >
-                                                {skill}
-                                            </span>
-                                        ))}
-                                    </div>
-                                )}
+                                {
+                                    cert.skills && cert.skills.length > 0 && (
+                                        <div className="cert-skills">
+                                            {cert.skills.slice(0, 4).map((skill) => (
+                                                <span
+                                                    key={`${cert.id}-${skill}`}
+                                                    className="cert-skill-tag"
+                                                >
+                                                    {skill}
+                                                </span>
+                                            ))}
+                                        </div>
+                                    )
+                                }
 
                                 <div className="cert-card-footer">
                                     {link ? (
@@ -375,8 +374,9 @@ const Certifications: React.FC<CertificationsProps> = ({ language }) => {
                         );
                     })}
                 </div>
-            )}
-        </div>
+            )
+            }
+        </div >
     );
 };
 
