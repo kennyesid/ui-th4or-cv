@@ -1,11 +1,11 @@
 import { createClient } from '@supabase/supabase-js';
 
 // ROJO ROJO CAMBIAR DESPUES DE LAS PRUEBAS A ESTO
-const supabaseUrl = import.meta.env.VITE_SUPABASE_URL as string | undefined;
-const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY as string | undefined;
+// const supabaseUrl = import.meta.env.VITE_SUPABASE_URL as string | undefined;
+// const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY as string | undefined;
 
-// const supabaseUrl = "https://uzhyjvqftsyqdpvkoxji.supabase.co";
-// const supabaseAnonKey = "sb_publishable_NhxXZg4zO9TjhY_fAOHMCg_ZaAPuW4G";
+const supabaseUrl = "https://zsnhjdizoanbejvnzgyu.supabase.co";
+const supabaseAnonKey = "sb_publishable_3Dn2tyJcDQq-fg89HF0KWQ_qtTQyMzu";
 
 // 2. Control de seguridad: Validamos que las variables existan para evitar errores silenciosos
 if (!supabaseUrl || !supabaseAnonKey) {

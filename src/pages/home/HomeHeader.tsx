@@ -1,6 +1,6 @@
 import { useEffect } from "react";
-import { firestore } from "../backgroundFound/Senddb";
-import { addDoc, collection } from "firebase/firestore";
+// import { firestore } from "../backgroundFound/Senddb";
+// import { addDoc, collection } from "firebase/firestore";
 
 import dataInformation from "../../features/home/services/dataInformation";
 
@@ -23,31 +23,31 @@ const HomeHeader: React.FC<HomeHeaderProps> = ({
   const getDate = getAllDate.getDate();
   const getMonth = getAllDate.getMonth();
 
-  const ref = collection(
-    firestore,
-    getDate.toString() + "-" + getMonth.toString() + "-" + "2024"
-  );
+  // const ref = collection(
+  //   firestore,
+  //   getDate.toString() + "-" + getMonth.toString() + "-" + "2024"
+  // );
 
   function redirectPageInstagram(event: React.MouseEvent<HTMLImageElement>) {
     event.preventDefault();
     window.open("https://www.instagram.com/kennyesid/", "_blank");
   }
 
-  useEffect(() => {
-    const xmas95 = new Date();
-    let data = {
-      message: xmas95,
-    };
-    try {
-      addDoc(ref, data);
-    } catch (ex) {
-      if (ex instanceof Error) {
-        console.log("exception: ", ex.message);
-      } else {
-        console.log("exception: ", ex);
-      }
-    }
-  }, []);
+  // useEffect(() => {
+  //   const xmas95 = new Date();
+  //   let data = {
+  //     message: xmas95,
+  //   };
+  //   try {
+  //     addDoc(ref, data);
+  //   } catch (ex) {
+  //     if (ex instanceof Error) {
+  //       console.log("exception: ", ex.message);
+  //     } else {
+  //       console.log("exception: ", ex);
+  //     }
+  //   }
+  // }, []);
 
   return (
     <>

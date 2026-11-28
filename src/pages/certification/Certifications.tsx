@@ -9,6 +9,7 @@ export interface CategoryEntity {
     name: string;
     description: string | null;
     sort_order: number;
+    image_bussiness_url: string | null;
     state: boolean;
 }
 
